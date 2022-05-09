@@ -1,0 +1,607 @@
+
+html{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #fff, #ddd);
+}
+header{
+    display: block;
+}
+/* El titulo con la letra con un linear gradient es el comienzo de los estilos */
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline;
+    position: absolute;
+    margin-left:15%;
+    margin-top:100px;
+    line-height: .8;
+    font-weight: bolder;
+    letter-spacing: -6px;
+    font-size: 5rem;
+    background:linear-gradient(to right ,#fff 0% 69%,#000 70% 100%);
+    -webkit-background-clip:text;
+    color: transparent;
+}
+/* Contenedor negro que se usa para darle estilo a la pagina en desktop > 1000px */
+.cont_h1{
+    display: inline-block;
+    background-color: #000;
+    color:#fff;
+    width: 38%;
+    height: 80vh;
+    margin-right:-5px;
+}
+
+/*  Fue un error haber insertado imagenes desde el html que desde el css */
+.div_img{
+    background-image: url("https://images.pexels.com/photos/2387606/pexels-photo-2387606.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    display: inline-block;
+    display: inline-block;
+    width:36%;
+    height: 80vh;
+
+}
+/* Boton puesto para el enlace hacia la galeria. */
+.cont_text_button{
+    display: inline-block;
+    position: absolute;
+    width: 30%;
+    font-weight: bolder;
+    margin-top: 100px;
+    margin-left: -120px;
+}
+.cont_text_button p {
+    display: inline-block;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+/* EL parrafo 1 se refiere a la primera describcion que aparece en la pagina sobre la galeria */
+.parrafo1{
+    display: inline-block;
+}
+.parrafo2{
+    color: #fff;
+    width:80%;
+    font-weight:2000;
+    font-size: 1rem;
+    background-color: #000;
+    padding: 5%;
+    letter-spacing: 4px;
+}
+.parrafo2 .a_movil{
+    display: none;
+}
+.parrafo3{
+    display: inline-block;
+    background-color: #fd5;
+    color: #000;
+    padding: 5% 7%;
+    font-size: 1rem;
+    margin:-4px;
+
+}
+.parrafo2:hover,.parrafo3:hover{
+    filter:grayscale(1) saturate(100) invert(1);
+    font-weight: 900;
+}
+main{
+    margin: 0;
+    margin-top: 5vh;
+    padding: 15%;
+    padding-top: 0;
+    padding-bottom: 10%;
+}
+
+article {
+    width: 100%;
+    height: auto;
+}
+.your_day_gallery{
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+
+}
+.your_day_gallery h2{
+    letter-spacing: 5px;
+    line-height: 1.5;
+    margin-bottom:0;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.your_day_gallery p{
+    margin: 0 0 30px 0;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+
+}
+.your_day_gallery_img{
+    display: inline-block;
+    margin-left: 5%;
+    /* background-color: transparent;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNxGrKsyw8cjLgYH8KhoUzUBkIvszf8Kp8A&usqp=CAU"); */
+    background-image: url("https://images.pexels.com/photos/2574476/pexels-photo-2574476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size:contain;
+    background-clip:border-box;
+    background-repeat: no-repeat;
+    background-origin:border-box;
+    /* background-attachment: fixed; */
+    min-height:350px;
+    width:50%;
+    background-position-x:right ;
+}
+.cont_flex_gallery{
+    display: grid;
+    align-items:flex-start;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 3%;
+}
+.cont_flex_gallery img{
+    width: 100%;
+    height: 100%;
+}
+.cont_flex_gallery .img:nth-child(1){
+    grid-row:1 / 3;
+    grid-column:1 / 4;
+}
+.cont_flex_gallery .img-2{
+    grid-column:4 / 6;
+    grid-row: 1 / 2;
+    height: 100%;
+
+
+}
+.div_come_inspire{
+    background-color: #000;
+    grid-column: 4 / 6;
+    height:99%;
+}
+
+.div_come_inspire h2{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+    padding: 10%;
+    padding-bottom: 5%;
+    text-transform: uppercase;
+    line-height: 1.5;
+
+}
+.div_come_inspire p{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 10%;
+    padding-top: 0;
+    text-align:left;
+
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 5%;
+    text-align: center;
+}
+.div_footer{
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.div_footer:nth-child(2){
+    width: 40%;
+    text-align: left;
+}
+.div_footer:nth-child(3){
+    width: 23%;
+    align-self: center;
+}
+.div_footer h2{
+    font-weight: bolder;
+    font-size: 2rem;
+    text-transform:uppercase;
+}
+.div_footer p{
+    font-size:1.2rem;
+    font-weight:500;
+}
+.div_footer a{
+ color:white;
+ font-size: 1.7rem;
+ margin:5%;
+}
+.fa-facebook{
+    color: #07f;
+}
+.fa-instagram{
+    color:#5438ce;
+}
+.fa-twitter{
+    color: #5af;
+}
+.fa-twitter:hover,.fa-facebook:hover,.fa-instagram:hover{
+    box-shadow:0 0 5px 0;
+}
+/* ------------------- Desing responsive para tablet------------------------- */
+@media screen and (max-width:1000px) {
+/* Primero se pone con display none a todos los elementos que no saldran */
+    .cont_h1{
+        display: none;
+    }
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: inline;
+        position: absolute;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        margin-left:45%;
+        margin-top: 10px;
+        font-weight: bolder;
+        font-size: 3rem;
+        background:linear-gradient(to right ,#000 0% 69%,#000 70% 100%);
+        -webkit-background-clip:text;
+        color: transparent;
+    }
+    .div_img{
+        background-image: url("https://images.pexels.com/photos/2387606/pexels-photo-2387606.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        display: inline-block;
+        width:66%;
+        height: 60vh;
+    
+    }
+    .cont_text_button{
+        display: inline-block;
+        position:absolute;
+        font-weight: bolder;
+        width: 50%;
+        margin-top:20%;
+        margin-left:-20%;
+    }
+    .cont_text_button p {
+        display: inline-block;
+        letter-spacing: 5px;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+    }
+    .parrafo2 .a_movil{
+        display: none;
+    }
+    /* Parrafo 1 2 y 3 no se les hicieron cambios pues no  los requieren
+    desde mi punto de vista */
+    main{
+        margin: 0;
+        margin-top: 10vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 0;
+        padding-bottom: 10%;
+    }
+    
+    article {
+        width: 100%;
+        height: auto;
+    }
+    .your_day_gallery{
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+    
+    }
+    .your_day_gallery h2{
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+
+    }
+    .your_day_gallery_img{
+        background-image: none;
+        width: 50%;
+    }
+    .your_day_gallery_img img{
+        display: inline-block;
+    }
+    /* Aprendimos a que se debe hacer con grid en div cuando queramos posicionar imagenes en forma con el textos que tambien esten en div*/
+    .cont_flex_gallery{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 3%;
+    }
+    .cont_flex_gallery .img:nth-child(1){
+        grid-row:1;
+        height: 200%;
+        grid-column:1 / 2;
+
+    }
+    .cont_flex_gallery .img-2{
+        grid-column:2 / 3;
+        grid-row: 1 / 2;
+        height: 100%;
+    
+    
+    }
+    .div_come_inspire{
+        background-color: #000;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        height:100%;
+    }
+    
+    .div_come_inspire h2{
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #fff;
+        padding: 10%;
+        padding-bottom: 5%;
+        text-transform: uppercase;
+        line-height: 1.5;
+    
+    }
+    .div_come_inspire p{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 10%;
+        padding-top: 0;
+        line-height: 1.5;
+    
+    }
+    footer{
+        margin-top: none;
+    }
+    .div_footer h2{
+        font-size: 1.5rem;
+    }
+    .div_footer p{
+        font-size: 1rem;
+    }
+}
+/* ---------------------Design Responsive para movil ---------------------------------------*/
+@media only screen and (max-width:600px){
+    .cont_h1{
+        visibility: hidden;
+        display: none;
+    }
+    body{
+    }
+    html{
+        font-family: 'Roboto', sans-serif;
+        background-image: linear-gradient(to right, #fff, #ddd);
+    }
+    header{
+        display: block;
+        height:140vh;
+    }
+    /*  Fue un error haber insertado imagenes desde el html que desde el css */
+    .div_img{
+        background-image: url("https://images.pexels.com/photos/2387606/pexels-photo-2387606.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        display: inline-block;
+        width:100%;
+        margin-left:15%;
+        height:60vh;
+        padding: 5%;
+    
+    }
+    /* El titulo con la letra con un linear gradient es el comienzo de los estilos */
+    h1{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: block;
+        margin-left:15%;
+        margin-right: 15%;
+        margin-top:60vh;
+        line-height: 1;
+        position: absolute;
+        font-weight: bolder;
+        letter-spacing: .5px;
+        font-size: 3rem;
+        background:linear-gradient(to right ,#000 0% 100%);
+        -webkit-background-clip:text;
+        color: transparent;
+    }
+    
+    /* Boton puesto para el enlace hacia la galeria. */
+    .cont_text_button{
+        display:block;
+        width:100%;
+        padding-left: 5%;
+        margin-right: 10%;
+        margin-top: 150px;
+        margin-left: 15%;
+        margin-right: 5%;
+        margin-bottom: 0;
+        position:relative;
+        font-weight: bolder;
+    }
+    .cont_text_button p {
+        display:inline-block;
+        letter-spacing: 5px;
+        line-height: 1.5;
+        margin-left: -5%;
+        margin-bottom: 10%;
+    }
+    /* EL parrafo 1 se refiere a la primera describcion que aparece en la pagina sobre la galeria */
+    .parrafo1{
+        display:block;
+        width: 70%;
+    }
+    .parrafo2{
+        color: #fff;
+        width:70%;
+        font-weight:2000;
+        font-size: 1rem;
+        background-color: #000;
+        display: inline;
+        transition:transform 2s ease-in-out 1s;
+        transition: filter ease-in-out 1s;
+    }
+    .parrafo2 .a_movil{
+        display: inline-block;
+        color: #fd5;
+        background-color:transparent;
+        font-size: 1rem;
+        margin-left: 10px;
+        padding:5px;
+    }
+    #parrafo3{
+        display: none;
+    }
+    /* Se quitaron los hover pues estos no tienen validez en los moviles */
+    .parrafo2:active{
+        filter:grayscale(1) saturate(100) invert(1);
+        font-weight: 900;
+        transform:translateX(5%) perspective(50rem) translateZ(5rem);
+    }
+    main{
+        display: block;
+    }
+    
+    article {
+        width: 100%;
+        height: auto;
+    }
+    .your_day_gallery{
+        display:block;
+        width: 80%;
+        text-align: center;
+    
+    }
+    .your_day_gallery h2{
+        letter-spacing: 5px;
+        line-height: 1.5;
+        margin-bottom:0;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+    .your_day_gallery p{
+        margin: 0 0 30px 0;
+        font-size: 1.5rem;
+        font-variant: small-caps;
+    
+    }
+    .your_day_gallery_img{
+        display: inline-block;
+        margin-left: 5%;
+        /* background-color: transparent;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNxGrKsyw8cjLgYH8KhoUzUBkIvszf8Kp8A&usqp=CAU"); */
+        background-image: url("https://images.pexels.com/photos/2574476/pexels-photo-2574476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+        background-size:contain;
+        background-clip:border-box;
+        background-repeat: no-repeat;
+        background-origin:border-box;
+        /* background-attachment: fixed; */
+        min-height:350px;
+        width:50%;
+        background-position-x:right ;
+    }
+    .cont_flex_gallery{
+        display: grid;
+        align-items:flex-start;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-gap: 3%;
+    }
+    .cont_flex_gallery img{
+        width: 100%;
+        height: 100%;
+    }
+    .cont_flex_gallery .img:nth-child(1){
+        grid-row:1 / 3;
+        grid-column:1 / 4;
+    }
+    .cont_flex_gallery .img-2{
+        grid-column:4 / 6;
+        grid-row: 1 / 2;
+        height: 100%;
+    
+    
+    }
+    .div_come_inspire{
+        background-color: #000;
+        grid-column: 4 / 6;
+        height:99%;
+    }
+    
+    .div_come_inspire h2{
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #fff;
+        padding: 10%;
+        padding-bottom: 5%;
+        text-transform: uppercase;
+        line-height: 1.5;
+    
+    }
+    .div_come_inspire p{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 10%;
+        padding-top: 0;
+        text-align:left;
+    
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        background-color: #000;
+        color: #fff;
+        padding: 5%;
+        text-align: center;
+        display: none;
+    }
+    .div_footer{
+        flex-direction: column;
+        justify-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .div_footer:nth-child(2){
+        width: 40%;
+        text-align: left;
+    }
+    .div_footer:nth-child(3){
+        width: 23%;
+        align-self: center;
+    }
+    .div_footer h2{
+        font-weight: bolder;
+        font-size: 2rem;
+        text-transform:uppercase;
+    }
+    .div_footer p{
+        font-size:1.2rem;
+        font-weight:500;
+    }
+    .div_footer a{
+     color:white;
+     font-size: 1.7rem;
+     margin:5%;
+    }
+    .fa-facebook{
+        color: #07f;
+    }
+    .fa-instagram{
+        color:#5438ce;
+    }
+    .fa-twitter{
+        color: #5af;
+    }
+    .fa-twitter:hover,.fa-facebook:hover,.fa-instagram:hover{
+        box-shadow:0 0 5px 0;
+    }
+}
+/*NOTE IMPORTANT---::Con esta galeria nos dimos cuenta que lo mejor es 
+realizar un diseño de movil first con los min width en media queries. */
